@@ -1,4 +1,4 @@
-# Mão na Massa
+# maonamassa-api
 
 `Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas`
 
