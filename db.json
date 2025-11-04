@@ -1,0 +1,359 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "nome": "Maria de Lourdes",
+      "email": "maria@example.com",
+      "telefone": "31987654321",
+      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "foto_blob": "https://via.placeholder.com/200?text=Maria",
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "nome": "João Pedro",
+      "email": "joao@example.com",
+      "telefone": "31988776655",
+      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "foto_blob": "https://via.placeholder.com/200?text=Joao",
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 3,
+      "nome": "Fernanda Alves",
+      "email": "fernanda@example.com",
+      "telefone": "31991234567",
+      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "foto_blob": "https://via.placeholder.com/200?text=Fernanda",
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 10,
+      "nome": "Ana Paula Silva",
+      "email": "ana@example.com",
+      "telefone": "31998765432",
+      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "foto_blob": "https://via.placeholder.com/200?text=Ana",
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 11,
+      "nome": "Carlos Henrique",
+      "email": "carlos@example.com",
+      "telefone": "31997654321",
+      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "foto_blob": "https://via.placeholder.com/200?text=Carlos",
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 12,
+      "nome": "Pedro Encanador",
+      "email": "pedro@example.com",
+      "telefone": "31999999999",
+      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "foto_blob": "https://via.placeholder.com/200?text=Pedro",
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    }
+  ],
+  "cliente": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "mensagem": "Procuro serviços de limpeza em Belo Horizonte"
+    },
+    {
+      "id": 2,
+      "usuario_id": 2,
+      "mensagem": "Interessado em serviços de manutenção e reformas"
+    },
+    {
+      "id": 3,
+      "usuario_id": 3,
+      "mensagem": "Gestor de condomínios, preciso de profissionais confiáveis"
+    }
+  ],
+  "professional": [
+    {
+      "id": 10,
+      "usuario_id": 10,
+      "biografia": "Diarista com 10 anos de experiência em limpeza e organização. Atendo apartamentos, casas e escritórios em Belo Horizonte e região.",
+      "categorias": "limpeza, organização",
+      "faixa_preco": 80.0,
+      "avaliacao_media": 4.8,
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 11,
+      "usuario_id": 11,
+      "biografia": "Especialista em manutenção predial com 15 anos de experiência. Equipe completa para qualquer tipo de reparo. Cobertura em toda a região metropolitana.",
+      "categorias": "manutenção, hidráulica, elétrica",
+      "faixa_preco": 120.0,
+      "avaliacao_media": 4.9,
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": 12,
+      "usuario_id": 12,
+      "biografia": "Encanador com 8 anos de experiência. Consertos rápidos, tubulações, aquecedores e projetos customizados.",
+      "categorias": "encanamento, hidráulica",
+      "faixa_preco": 100.0,
+      "avaliacao_media": 4.6,
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-01-15T10:30:00Z"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "professional_id": 10,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+1",
+      "descricao": "Limpeza profissional de apartamento 3 quartos",
+      "data_timestamp": "2024-12-20T14:00:00Z"
+    },
+    {
+      "id": 2,
+      "professional_id": 10,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+2",
+      "descricao": "Organização de escritório comercial",
+      "data_timestamp": "2024-12-15T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "professional_id": 10,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+3",
+      "descricao": "Limpeza profunda com desinfecção",
+      "data_timestamp": "2024-12-10T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "professional_id": 11,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+1",
+      "descricao": "Reparo completo de encanamento residencial",
+      "data_timestamp": "2024-12-10T09:00:00Z"
+    },
+    {
+      "id": 5,
+      "professional_id": 11,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+2",
+      "descricao": "Manutenção de sistema elétrico predial",
+      "data_timestamp": "2024-12-05T16:00:00Z"
+    },
+    {
+      "id": 6,
+      "professional_id": 11,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+3",
+      "descricao": "Reforma de banheiro completa",
+      "data_timestamp": "2024-11-30T11:00:00Z"
+    },
+    {
+      "id": 7,
+      "professional_id": 12,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Pedro+1",
+      "descricao": "Conserto de vazamento de torneira",
+      "data_timestamp": "2024-12-12T13:00:00Z"
+    },
+    {
+      "id": 8,
+      "professional_id": 12,
+      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Pedro+2",
+      "descricao": "Instalação de aquecedor solar",
+      "data_timestamp": "2024-12-01T10:00:00Z"
+    }
+  ],
+  "servico": [
+    {
+      "id": 1,
+      "nome": "Limpeza",
+      "descricao": "Serviços de limpeza residencial e comercial"
+    },
+    {
+      "id": 2,
+      "nome": "Manutenção",
+      "descricao": "Manutenção predial e reparos diversos"
+    },
+    {
+      "id": 3,
+      "nome": "Hidráulica",
+      "descricao": "Serviços de encanamento e hidráulica"
+    },
+    {
+      "id": 4,
+      "nome": "Elétrica",
+      "descricao": "Instalações e reparos elétricos"
+    },
+    {
+      "id": 5,
+      "nome": "Pintura",
+      "descricao": "Serviços de pintura residencial e comercial"
+    },
+    {
+      "id": 6,
+      "nome": "Encanamento",
+      "descricao": "Reparos e instalação de encanamento"
+    },
+    {
+      "id": 7,
+      "nome": "Reparo",
+      "descricao": "Reparos gerais em residências e comércios"
+    },
+    {
+      "id": 8,
+      "nome": "Organização",
+      "descricao": "Organização e limpeza profunda de ambientes"
+    }
+  ],
+  "contratacao": [
+    {
+      "id": 100,
+      "servico_id": 1,
+      "cliente_id": 1,
+      "professional_id": 10,
+      "preco": 250.0,
+      "status": "concluido",
+      "descricao": "Limpeza geral do apartamento (3 quartos, 2 banheiros, cozinha, sala)",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+1",
+      "localizacao": "Rua A, 123 - Belo Horizonte, MG - 19.9167,-43.9345",
+      "avaliador_id": 1,
+      "nota": 5,
+      "comentario": "Excelente trabalho! Apartamento ficou impecável. Ana Paula é muito atenciosa e profissional. Recomendo!",
+      "data_criacao": "2025-01-20T10:00:00Z",
+      "data_atualizacao": "2025-01-20T17:30:00Z"
+    },
+    {
+      "id": 101,
+      "servico_id": 2,
+      "cliente_id": 2,
+      "professional_id": 11,
+      "preco": 500.0,
+      "status": "em_andamento",
+      "descricao": "Reparo no chuveiro e destravamento do encanamento",
+      "arquivo_blob": null,
+      "localizacao": "Avenida B, 456 - Belo Horizonte, MG - 19.9200,-43.9300",
+      "avaliador_id": null,
+      "nota": null,
+      "comentario": null,
+      "data_criacao": "2025-01-22T08:00:00Z",
+      "data_atualizacao": "2025-01-22T13:00:00Z"
+    },
+    {
+      "id": 102,
+      "servico_id": 1,
+      "cliente_id": 3,
+      "professional_id": 10,
+      "preco": 400.0,
+      "status": "aceito",
+      "descricao": "Limpeza profunda de 2 salas comerciais",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+3",
+      "localizacao": "Rua C, 789 - Belo Horizonte, MG - 19.9250,-43.9400",
+      "avaliador_id": null,
+      "nota": null,
+      "comentario": null,
+      "data_criacao": "2025-01-23T09:00:00Z",
+      "data_atualizacao": "2025-01-23T10:00:00Z"
+    },
+    {
+      "id": 103,
+      "servico_id": 3,
+      "cliente_id": 1,
+      "professional_id": 12,
+      "preco": 150.0,
+      "status": "criado",
+      "descricao": "Conserto de torneira que está vazando",
+      "arquivo_blob": null,
+      "localizacao": "Rua A, 123 - Belo Horizonte, MG - 19.9167,-43.9345",
+      "avaliador_id": null,
+      "nota": null,
+      "comentario": null,
+      "data_criacao": "2025-01-24T15:00:00Z",
+      "data_atualizacao": "2025-01-24T15:00:00Z"
+    },
+    {
+      "id": 104,
+      "servico_id": 1,
+      "cliente_id": 2,
+      "professional_id": 10,
+      "preco": 300.0,
+      "status": "concluido",
+      "descricao": "Limpeza semanal recorrente",
+      "arquivo_blob": null,
+      "localizacao": "Avenida B, 456 - Belo Horizonte, MG - 19.9200,-43.9300",
+      "avaliador_id": 2,
+      "nota": 4,
+      "comentario": "Bom atendimento. Preço poderia ser mais competitivo.",
+      "data_criacao": "2025-01-10T08:00:00Z",
+      "data_atualizacao": "2025-01-17T10:00:00Z"
+    }
+  ],
+  "notificacao": [
+    {
+      "id": 1,
+      "cliente_id": 1,
+      "mensagem": "Pedido concluído! Ana Paula completou seu pedido de limpeza.",
+      "data_criacao": "2025-01-20T17:30:00Z"
+    },
+    {
+      "id": 2,
+      "cliente_id": 3,
+      "mensagem": "Seu pedido foi aceito! Ana Paula começará o trabalho em breve.",
+      "data_criacao": "2025-01-23T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "cliente_id": 2,
+      "mensagem": "Serviço em andamento! Carlos iniciou o trabalho de manutenção.",
+      "data_criacao": "2025-01-22T13:00:00Z"
+    },
+    {
+      "id": 4,
+      "cliente_id": 1,
+      "mensagem": "Nova proposta disponível! 2 profissionais responderam sua solicitação.",
+      "data_criacao": "2025-01-24T16:00:00Z"
+    },
+    {
+      "id": 5,
+      "cliente_id": 10,
+      "mensagem": "Novo pedido! Maria solicita limpeza de 3 quartos. Taxa: R$ 250.",
+      "data_criacao": "2025-01-23T09:00:00Z"
+    }
+  ],
+  "favorito": [
+    {
+      "id": 1,
+      "cliente_id": 1,
+      "professional_favorito_id": 10,
+      "data_criacao": "2025-01-20T18:00:00Z"
+    },
+    {
+      "id": 2,
+      "cliente_id": 3,
+      "professional_favorito_id": 10,
+      "data_criacao": "2025-01-23T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "cliente_id": 2,
+      "professional_favorito_id": 11,
+      "data_criacao": "2025-01-22T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "cliente_id": 1,
+      "professional_favorito_id": 12,
+      "data_criacao": "2025-01-24T15:30:00Z"
+    },
+    {
+      "id": 5,
+      "cliente_id": 2,
+      "professional_favorito_id": 12,
+      "data_criacao": "2025-01-21T11:00:00Z"
+    }
+  ]
+}

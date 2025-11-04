@@ -1,0 +1,44 @@
+{
+  "name": "maonamassa-api",
+  "version": "1.0.0",
+  "description": "JSON Server - API Fake para projeto mobile Mão na Massa (Marketplace Hiperlocal de Serviços)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "json-server --watch db.json --port 3000",
+    "test": "curl http://localhost:3000/health"
+  },
+  "keywords": [
+    "json-server",
+    "fake-api",
+    "maonamassa",
+    "marketplace",
+    "mobile",
+    "react-native",
+    "expo",
+    "vercel"
+  ],
+  "author": "Equipe Mão na Massa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/maonamassa-api.git"
+  },
+  "homepage": "https://github.com/seu-usuario/maonamassa-api#readme",
+  "bugs": {
+    "url": "https://github.com/seu-usuario/maonamassa-api/issues"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
