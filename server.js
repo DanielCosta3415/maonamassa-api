@@ -69,6 +69,25 @@ server.db = router.db;
 server.use(auth);
 
 
+server.use(jsonServer.bodyParser);
+
+// Middleware para adicionar timestamps automaticamente
+server.use((req, res, next) => {
+  if (req.method === 'POST') {
+    // Adiciona data de criação em novos registros
+    req.body.createdAt = new Date().toISOString();
+    req.body.updatedAt = new Date().toISOString();
+  }
+  
+  if (req.method === 'PUT' || req.method === 'PATCH') {
+    // Atualiza data de edição em registros editados
+    req.body.updatedAt = new Date().toISOString();
+  }
+  
+  next();
+});
+
+
 // 4. Roteador (CRUD automático para todas as tabelas)
 server.use(router);
 
