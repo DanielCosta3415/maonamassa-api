@@ -1,11 +1,11 @@
 {
-  "usuario": [
+  "users": [
     {
       "id": 1,
       "nome": "Maria de Lourdes",
       "email": "maria@example.com",
       "telefone": "31987654321",
-      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
       "foto_blob": "https://via.placeholder.com/200?text=Maria",
       "createdAt": "2025-01-15T10:30:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
@@ -15,7 +15,7 @@
       "nome": "João Pedro",
       "email": "joao@example.com",
       "telefone": "31988776655",
-      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
       "foto_blob": "https://via.placeholder.com/200?text=Joao",
       "createdAt": "2025-01-15T10:30:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
@@ -25,7 +25,7 @@
       "nome": "Fernanda Alves",
       "email": "fernanda@example.com",
       "telefone": "31991234567",
-      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
       "foto_blob": "https://via.placeholder.com/200?text=Fernanda",
       "createdAt": "2025-01-15T10:30:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
@@ -35,7 +35,7 @@
       "nome": "Ana Paula Silva",
       "email": "ana@example.com",
       "telefone": "31998765432",
-      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
       "foto_blob": "https://via.placeholder.com/200?text=Ana",
       "createdAt": "2025-01-15T10:30:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
@@ -45,7 +45,7 @@
       "nome": "Carlos Henrique",
       "email": "carlos@example.com",
       "telefone": "31997654321",
-      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
       "foto_blob": "https://via.placeholder.com/200?text=Carlos",
       "createdAt": "2025-01-15T10:30:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
@@ -55,7 +55,7 @@
       "nome": "Pedro Encanador",
       "email": "pedro@example.com",
       "telefone": "31999999999",
-      "senha": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
       "foto_blob": "https://via.placeholder.com/200?text=Pedro",
       "createdAt": "2025-01-15T10:30:00Z",
       "updatedAt": "2025-01-15T10:30:00Z"
