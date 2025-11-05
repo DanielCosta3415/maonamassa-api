@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+
 /**
  * ============================================================================
  * server.js - Servidor JSON Server (Mão na Massa API)
@@ -11,7 +12,7 @@
  * Stack: Node.js + Express.js + JSON Server + json-server-auth
  * 
  * Tabelas (db.json):
- *   1. usuario        - Autenticação + cadastro base
+ *   1. users          - Autenticação + cadastro base
  *   2. cliente        - Dados específicos cliente
  *   3. professional   - Dados específicos profissional
  *   4. portfolio      - Fotos/trabalhos do profissional
@@ -25,16 +26,20 @@
  * ============================================================================
  */
 
+
 const jsonServer = require('json-server');
 const auth = require('json-server-auth');
 const path = require('path');
+
 
 // ============================================================================
 // CRIAR SERVIDOR
 // ============================================================================
 
+
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
+
 
 // Middlewares padrão (logging, CORS, body parser)
 const middlewares = jsonServer.defaults({
@@ -43,23 +48,35 @@ const middlewares = jsonServer.defaults({
   bodyParser: true
 });
 
+
 // ============================================================================
 // APLICAR MIDDLEWARES E ROTEADORES
 // ============================================================================
 
+
 // 1. Middlewares globais
 server.use(middlewares);
 
-// 2. Autenticação JWT (json-server-auth)
-//    Cria endpoints: POST /auth/register, POST /auth/login
+
+// 2. Vincular banco de dados ao servidor
+//    IMPORTANTE: json-server-auth precisa acessar server.db
+//    para criar/validar usuários e gerenciar JWT
+server.db = router.db;
+
+
+// 3. Autenticação JWT (json-server-auth)
+//    Cria endpoints: POST /register, POST /login
 server.use(auth);
 
-// 3. Roteador (CRUD automático para todas as tabelas)
+
+// 4. Roteador (CRUD automático para todas as tabelas)
 server.use(router);
+
 
 // ============================================================================
 // ENDPOINTS CUSTOMIZADOS
 // ============================================================================
+
 
 // Health Check
 server.get('/health', (req, res) => {
@@ -69,7 +86,7 @@ server.get('/health', (req, res) => {
     timestamp: new Date().toISOString(),
     uptime: Math.floor(process.uptime()),
     tables: [
-      'usuario',
+      'users',
       'cliente',
       'professional',
       'portfolio',
@@ -80,6 +97,7 @@ server.get('/health', (req, res) => {
     ]
   });
 });
+
 
 // Endpoint para buscar profissionais por proximidade
 // GET /api/professionals/search?lat=-19.9167&lon=-43.9345&radius=8&servico_id=1
@@ -93,6 +111,7 @@ server.get('/api/professionals/search', (req, res) => {
     });
   }
 
+
   // Aqui seria implementada lógica Haversine no backend
   // Por enquanto, cliente faz cálculo (vs. lógica em backend)
   res.json({
@@ -101,6 +120,7 @@ server.get('/api/professionals/search', (req, res) => {
     note: 'Cálculo de distância realizado no cliente (Haversine)'
   });
 });
+
 
 // Endpoint para atualizar status de contratacao
 // PUT /api/contratacao/:id/status
@@ -114,11 +134,13 @@ server.put('/api/contratacao/:id/status', (req, res) => {
     });
   }
 
+
   res.json({
     message: `Status atualizado para: ${status}`,
     timestamp: new Date().toISOString()
   });
 });
+
 
 // Endpoint para atualizar avaliação de contratacao
 // PUT /api/contratacao/:id/avaliar
@@ -131,6 +153,7 @@ server.put('/api/contratacao/:id/avaliar', (req, res) => {
     });
   }
 
+
   res.json({
     message: 'Avaliação registrada',
     nota,
@@ -139,9 +162,11 @@ server.put('/api/contratacao/:id/avaliar', (req, res) => {
   });
 });
 
+
 // ============================================================================
 // TRATAMENTO DE ERROS 404
 // ============================================================================
+
 
 server.use((req, res) => {
   res.status(404).json({
@@ -153,15 +178,19 @@ server.use((req, res) => {
   });
 });
 
+
 // ============================================================================
 // EXPORTAR PARA VERCEL
 // ============================================================================
 
+
 module.exports = server;
+
 
 // ============================================================================
 // EXECUÇÃO LOCAL
 // ============================================================================
+
 
 if (require.main === module) {
   const PORT = process.env.PORT || 3000;
@@ -175,13 +204,13 @@ if (require.main === module) {
     console.log('\n📊 ENDPOINTS DISPONÍVEIS:\n');
     
     console.log('🔐 AUTENTICAÇÃO:');
-    console.log('   POST   /auth/register          Cadastro (usuario)');
-    console.log('   POST   /auth/login             Login (retorna JWT)');
+    console.log('   POST   /register               Cadastro (users)');
+    console.log('   POST   /login                  Login (retorna JWT)');
     
     console.log('\n👤 USUÁRIOS:');
-    console.log('   GET    /usuario                Listar');
-    console.log('   GET    /usuario/:id            Detalhe');
-    console.log('   PUT    /usuario/:id            Editar');
+    console.log('   GET    /users                  Listar');
+    console.log('   GET    /users/:id              Detalhe');
+    console.log('   PUT    /users/:id              Editar');
     
     console.log('\n🛍️  CLIENTES:');
     console.log('   GET    /cliente                Listar');
