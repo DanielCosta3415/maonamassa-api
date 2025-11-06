@@ -44,7 +44,6 @@ server.db = router.db;
 
 // Middlewares padrão (logging, CORS, body parser)
 const middlewares = jsonServer.defaults({
-  static: './',
   noCors: false,
   bodyParser: true
 });
