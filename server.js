@@ -161,20 +161,6 @@ server.put('/api/contratacao/:id/avaliar', (req, res) => {
 server.use(router);
 
 // ============================================================================
-// TRATAMENTO DE ERROS 404
-// ============================================================================
-
-server.use((req, res) => {
-  res.status(404).json({
-    error: 'Endpoint não encontrado',
-    path: req.path,
-    method: req.method,
-    timestamp: new Date().toISOString(),
-    hint: 'Consulte a documentação: https://github.com/seu-usuario/maonamassa-api'
-  });
-});
-
-// ============================================================================
 // EXPORTAR PARA VERCEL
 // ============================================================================
 
