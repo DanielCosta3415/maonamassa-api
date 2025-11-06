@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 /**
  * ============================================================================
  * server.js - Servidor JSON Server (Mão na Massa API)
@@ -40,6 +39,12 @@ const path = require('path');
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
+/** O pacote `json-server-auth` exige que o banco de dados seja
+ *  [associado ao `server` (ou `app`) criado](https://github.com/jeremyben/json-server-auth/tree/master#module-usage-)
+ *  para que ele possa gerenciar usuários e tokens JWT.
+ */
+server.db = router.db;
+
 
 // Middlewares padrão (logging, CORS, body parser)
 const middlewares = jsonServer.defaults({
@@ -57,15 +62,7 @@ const middlewares = jsonServer.defaults({
 // 1. Middlewares globais
 server.use(middlewares);
 
-
-// 2. Vincular banco de dados ao servidor
-//    IMPORTANTE: json-server-auth precisa acessar server.db
-//    para criar/validar usuários e gerenciar JWT
-server.db = router.db;
-
-
-// 3. Autenticação JWT (json-server-auth)
-//    Cria endpoints: POST /register, POST /login
+// 2. Autenticação JWT + regras de acesso
 server.use(auth);
 
 
@@ -86,10 +83,6 @@ server.use((req, res, next) => {
   
   next();
 });
-
-
-// 4. Roteador (CRUD automático para todas as tabelas)
-server.use(router);
 
 
 // ============================================================================
@@ -181,6 +174,8 @@ server.put('/api/contratacao/:id/avaliar', (req, res) => {
   });
 });
 
+// 4. Roteador (CRUD automático para todas as tabelas)
+server.use(router);
 
 // ============================================================================
 // TRATAMENTO DE ERROS 404
