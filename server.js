@@ -56,9 +56,6 @@ const middlewares = jsonServer.defaults({
 // 1. Middlewares globais
 server.use(middlewares);
 
-// 2. Autenticação JWT + regras de acesso
-server.use(auth);
-
 // Middleware para adicionar timestamps automaticamente
 server.use((req, res, next) => {
   if (req.method === 'POST') {
@@ -74,6 +71,9 @@ server.use((req, res, next) => {
 
   next();
 });
+
+// 2. Autenticação JWT + regras de acesso
+server.use(auth);
 
 // ============================================================================
 // ENDPOINTS CUSTOMIZADOS
