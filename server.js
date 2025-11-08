@@ -36,6 +36,42 @@ const path = require('path');
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
+/** Regras de acesso para as rotas das "tabelas" do JSON Server.
+ *
+ *  Não há como proteger a rota `contratacao` através de regras de dono (`6**`)
+ *  pois não é possível determinar o dono do dado através do `userId`, visto
+ *  que tanto clientes quanto profissionais precisam ter o acesso de leitura/escrita
+ *  do contrato após criados.
+ *
+ *  Além disso, os profissionais podem criar um novo contrato após visualizarem
+ *  e aceitarem os `servico`s pedidos pelos clientes.
+ */
+const accessRules = auth.rewriter({
+  // Só o dono dos dados pode modificá-los.
+  "users": 600,
+
+  // Só o dono dos dados pode modificá-los e os outros podem apenas visualizar.
+  "cliente": 644,
+  "professional": 644,
+
+  // Só o profissional pode modificar seus portifólios,
+  // enquanto o cliente e público podem apenas visualizar.
+  "portfolio": 644,
+
+  // Só o cliente pode modificar os serviços solicitados,
+  // enquanto os profissionais podem apenas visualizar.
+  "servico": 640,
+
+  // Só o cliente e o profissional podem modificar as contratações.
+  "contratacao": 660,
+
+  // Só o dono das notificações pode modificá-las.
+  "notificacao": 600,
+
+  // Só o cliente pode modificar os profissionais favoritos.
+  "favorito": 600
+});
+
 /** O pacote `json-server-auth` exige que o banco de dados seja
  *  [associado ao `server` (ou `app`) criado](https://github.com/jeremyben/json-server-auth/tree/master#module-usage-)
  *  para que ele possa gerenciar usuários e tokens JWT.
@@ -72,6 +108,7 @@ server.use((req, res, next) => {
 });
 
 // 2. Autenticação JWT + regras de acesso
+server.use(accessRules);
 server.use(auth);
 
 // ============================================================================
