@@ -29,6 +29,8 @@ const jsonServer = require('json-server');
 const auth = require('json-server-auth');
 const path = require('path');
 
+const customEndpoints = require('./custom-endpoints.js');
+
 // ============================================================================
 // CRIAR SERVIDOR
 // ============================================================================
@@ -43,19 +45,18 @@ const router = jsonServer.router(path.join(__dirname, 'db.json'));
 server.db = router.db;
 
 // Middlewares padrão (logging, CORS, body parser)
-const middlewares = jsonServer.defaults({
+const defaultMiddlewares = jsonServer.defaults({
   noCors: false,
   bodyParser: true
 });
 
 // ============================================================================
-// APLICAR MIDDLEWARES E ROTEADORES
+// APLICANDO MIDDLEWARES E ROTEADORES
 // ============================================================================
 
-// 1. Middlewares globais
-server.use(middlewares);
+server.use(defaultMiddlewares);
 
-// Middleware para adicionar timestamps automaticamente
+// Adicionando timestamps automaticamente em metodos POST, PUT e PATCH.
 server.use((req, res, next) => {
   if (req.method === 'POST') {
     // Adiciona data de criação em novos registros
@@ -71,14 +72,14 @@ server.use((req, res, next) => {
   next();
 });
 
-// 2. Autenticação JWT + regras de acesso
+// Autenticação JWT + regras de acesso
 server.use(auth);
 
 // ============================================================================
 // ENDPOINTS CUSTOMIZADOS
 // ============================================================================
 
-// Health Check
+// Verificação básica de saúde do servidor.
 server.get('/health', (req, res) => {
   res.json({
     status: 'OK',
@@ -98,65 +99,8 @@ server.get('/health', (req, res) => {
   });
 });
 
-// Endpoint para buscar profissionais por proximidade
-// GET /api/professionals/search?lat=-19.9167&lon=-43.9345&radius=8&servico_id=1
-server.get('/api/professionals/search', (req, res) => {
-  const { lat, lon, radius = 8, servico_id } = req.query;
+server.use("/api", customEndpoints);
 
-  if (!lat || !lon) {
-    return res.status(400).json({
-      error: 'Parâmetros obrigatórios: lat, lon',
-      example: '/api/professionals/search?lat=-19.9167&lon=-43.9345&radius=8'
-    });
-  }
-
-  // Aqui seria implementada lógica Haversine no backend
-  // Por enquanto, cliente faz cálculo (vs. lógica em backend)
-  res.json({
-    message: 'Busca por proximidade disponível',
-    params: { lat, lon, radius, servico_id },
-    note: 'Cálculo de distância realizado no cliente (Haversine)'
-  });
-});
-
-// Endpoint para atualizar status de contratacao
-// PUT /api/contratacao/:id/status
-server.put('/api/contratacao/:id/status', (req, res) => {
-  const { status } = req.body;
-  const validStatus = ['criado', 'aceito', 'em_andamento', 'concluido', 'cancelado'];
-
-  if (!validStatus.includes(status)) {
-    return res.status(400).json({
-      error: `Status inválido. Deve ser um de: ${validStatus.join(', ')}`
-    });
-  }
-
-  res.json({
-    message: `Status atualizado para: ${status}`,
-    timestamp: new Date().toISOString()
-  });
-});
-
-// Endpoint para atualizar avaliação de contratacao
-// PUT /api/contratacao/:id/avaliar
-server.put('/api/contratacao/:id/avaliar', (req, res) => {
-  const { nota, comentario } = req.body;
-
-  if (nota < 1 || nota > 5) {
-    return res.status(400).json({
-      error: 'Nota deve estar entre 1 e 5'
-    });
-  }
-
-  res.json({
-    message: 'Avaliação registrada',
-    nota,
-    comentario,
-    timestamp: new Date().toISOString()
-  });
-});
-
-// 4. Roteador (CRUD automático para todas as tabelas)
 server.use(router);
 
 // ============================================================================
