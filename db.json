@@ -147,7 +147,16 @@
     "faixa_preco": 80.0,
     "avaliacao_media": 4.8,
     "createdAt": "2025-01-15T10:30:00Z",
-    "updatedAt": "2025-01-15T10:30:00Z"
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "disponibilidade": [
+      { "dia": "Seg", "horarios": ["08:00", "09:00", "10:00", "11:00"] },
+      { "dia": "Ter", "horarios": ["08:00", "09:00", "10:00", "11:00"] },
+      { "dia": "Qua", "horarios": ["08:00", "09:00", "10:00", "11:00"] },
+      { "dia": "Qui", "horarios": ["08:00", "09:00", "10:00"] },
+      { "dia": "Sex", "horarios": ["09:00", "10:00", "11:00"] },
+      { "dia": "Sab", "horarios": ["09:00", "10:00", "11:00"] },
+      { "dia": "Dom", "horarios": [] }
+    ]
   },
   {
     "id": 11,
@@ -157,7 +166,16 @@
     "faixa_preco": 120.0,
     "avaliacao_media": 4.9,
     "createdAt": "2025-01-15T10:30:00Z",
-    "updatedAt": "2025-01-15T10:30:00Z"
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "disponibilidade": [
+      { "dia": "Seg", "horarios": ["08:00", "09:00", "10:00"] },
+      { "dia": "Ter", "horarios": ["08:00", "09:00", "10:00"] },
+      { "dia": "Qua", "horarios": ["08:00", "09:00", "10:00"] },
+      { "dia": "Qui", "horarios": ["09:00", "10:00"] },
+      { "dia": "Sex", "horarios": ["10:00", "11:00"] },
+      { "dia": "Sab", "horarios": ["09:00", "11:00"] },
+      { "dia": "Dom", "horarios": [] }
+    ]
   },
   {
     "id": 12,
@@ -167,7 +185,16 @@
     "faixa_preco": 100.0,
     "avaliacao_media": 4.6,
     "createdAt": "2025-01-15T10:30:00Z",
-    "updatedAt": "2025-01-15T10:30:00Z"
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "disponibilidade": [
+      { "dia": "Seg", "horarios": ["08:30", "09:30", "10:30"] },
+      { "dia": "Ter", "horarios": ["08:30", "09:30", "10:30"] },
+      { "dia": "Qua", "horarios": ["08:30", "10:30"] },
+      { "dia": "Qui", "horarios": [] },
+      { "dia": "Sex", "horarios": ["10:30", "11:30"] },
+      { "dia": "Sab", "horarios": ["09:00", "10:00"] },
+      { "dia": "Dom", "horarios": [] }
+    ]
   }
 ],
   "portfolio": [
