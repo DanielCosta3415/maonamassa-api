@@ -1,66 +1,120 @@
 {
   "users": [
-    {
-      "id": 1,
-      "nome": "Maria de Lourdes",
-      "email": "maria@example.com",
-      "telefone": "31987654321",
-      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://randomuser.me/api/portraits/women/1.jpg",
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 2,
-      "nome": "João Pedro",
-      "email": "joao@example.com",
-      "telefone": "31988776655",
-      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://randomuser.me/api/portraits/men/2.jpg",
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 3,
-      "nome": "Fernanda Alves",
-      "email": "fernanda@example.com",
-      "telefone": "31991234567",
-      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://randomuser.me/api/portraits/women/3.jpg",
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 10,
-      "nome": "Ana Paula Silva",
-      "email": "ana@example.com",
-      "telefone": "31998765432",
-      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://randomuser.me/api/portraits/women/5.jpg",
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 11,
-      "nome": "Carlos Henrique",
-      "email": "carlos@example.com",
-      "telefone": "31997654321",
-      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://randomuser.me/api/portraits/men/6.jpg",
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 12,
-      "nome": "Pedro Encanador",
-      "email": "pedro@example.com",
-      "telefone": "31999999999",
-      "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://i.ibb.co/7JFyq069/avatar5.png",
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    }
-  ],
+  {
+    "id": 1,
+    "nome": "Maria de Lourdes",
+    "email": "maria@example.com",
+    "telefone": "31987654321",
+    "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+    "foto_blob": "https://randomuser.me/api/portraits/women/1.jpg",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "endereco": [
+      {
+        "tipo": "principal",
+        "rua": "Rua das Flores, 120",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30100-001"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "João Pedro",
+    "email": "joao@example.com",
+    "telefone": "31988776655",
+    "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+    "foto_blob": "https://randomuser.me/api/portraits/men/2.jpg",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "endereco": [
+      {
+        "tipo": "principal",
+        "rua": "Av. das Palmeiras, 987",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01210-200"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Fernanda Alves",
+    "email": "fernanda@example.com",
+    "telefone": "31991234567",
+    "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+    "foto_blob": "https://randomuser.me/api/portraits/women/3.jpg",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "endereco": [
+      {
+        "tipo": "principal",
+        "rua": "Rua do Cano, 321",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "80000-000"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Ana Paula Silva",
+    "email": "ana@example.com",
+    "telefone": "31998765432",
+    "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+    "foto_blob": "https://randomuser.me/api/portraits/women/5.jpg",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "endereco": [
+      {
+        "tipo": "principal",
+        "rua": "Praça dos Trabalhadores, 100",
+        "cidade": "Uberlândia",
+        "estado": "MG",
+        "cep": "38400-000"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Carlos Henrique",
+    "email": "carlos@example.com",
+    "telefone": "31997654321",
+    "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+    "foto_blob": "https://randomuser.me/api/portraits/men/6.jpg",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "endereco": [
+      {
+        "tipo": "principal",
+        "rua": "Rua do Mercado, 230",
+        "cidade": "Porto Alegre",
+        "estado": "RS",
+        "cep": "90000-500"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "Pedro Encanador",
+    "email": "pedro@example.com",
+    "telefone": "31999999999",
+    "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
+    "foto_blob": "https://i.ibb.co/7JFyq069/avatar5.png",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "endereco": [
+      {
+        "tipo": "principal",
+        "rua": "Av. do Contorno, 10",
+        "cidade": "Recife",
+        "estado": "PE",
+        "cep": "50000-150"
+      }
+    ]
+  }
+],
   "cliente": [
     {
       "id": 1,
