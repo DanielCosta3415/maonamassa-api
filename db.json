@@ -12,7 +12,8 @@
     "endereco": [
       {
         "tipo": "principal",
-        "rua": "Rua das Flores, 120",
+        "rua": "Rua das Flores",
+        "numero": "120",
         "cidade": "Belo Horizonte",
         "estado": "MG",
         "cep": "30100-001"
@@ -31,7 +32,8 @@
     "endereco": [
       {
         "tipo": "principal",
-        "rua": "Av. das Palmeiras, 987",
+        "rua": "Av. das Palmeiras",
+        "numero": "987",
         "cidade": "São Paulo",
         "estado": "SP",
         "cep": "01210-200"
@@ -50,7 +52,8 @@
     "endereco": [
       {
         "tipo": "principal",
-        "rua": "Rua do Cano, 321",
+        "rua": "Rua do Cano",
+        "numero": "321",
         "cidade": "Curitiba",
         "estado": "PR",
         "cep": "80000-000"
@@ -69,7 +72,8 @@
     "endereco": [
       {
         "tipo": "principal",
-        "rua": "Praça dos Trabalhadores, 100",
+        "rua": "Praça dos Trabalhadores",
+        "numero": "100",
         "cidade": "Uberlândia",
         "estado": "MG",
         "cep": "38400-000"
@@ -88,7 +92,8 @@
     "endereco": [
       {
         "tipo": "principal",
-        "rua": "Rua do Mercado, 230",
+        "rua": "Rua do Mercado",
+        "numero": "230",
         "cidade": "Porto Alegre",
         "estado": "RS",
         "cep": "90000-500"
@@ -107,7 +112,8 @@
     "endereco": [
       {
         "tipo": "principal",
-        "rua": "Av. do Contorno, 10",
+        "rua": "Av. do Contorno",
+        "numero": "10",
         "cidade": "Recife",
         "estado": "PE",
         "cep": "50000-150"
