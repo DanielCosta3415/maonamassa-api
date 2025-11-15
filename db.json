@@ -169,47 +169,127 @@
     }
   ],
   "servico": [
-    {
-      "id": 1,
-      "nome": "Limpeza",
-      "descricao": "Serviços de limpeza residencial e comercial"
-    },
-    {
-      "id": 2,
-      "nome": "Manutenção",
-      "descricao": "Manutenção predial e reparos diversos"
-    },
-    {
-      "id": 3,
-      "nome": "Hidráulica",
-      "descricao": "Serviços de encanamento e hidráulica"
-    },
-    {
-      "id": 4,
-      "nome": "Elétrica",
-      "descricao": "Instalações e reparos elétricos"
-    },
-    {
-      "id": 5,
-      "nome": "Pintura",
-      "descricao": "Serviços de pintura residencial e comercial"
-    },
-    {
-      "id": 6,
-      "nome": "Encanamento",
-      "descricao": "Reparos e instalação de encanamento"
-    },
-    {
-      "id": 7,
-      "nome": "Reparo",
-      "descricao": "Reparos gerais em residências e comércios"
-    },
-    {
-      "id": 8,
-      "nome": "Organização",
-      "descricao": "Organização e limpeza profunda de ambientes"
-    }
-  ],
+  {
+    "id": 1,
+    "nome": "Limpeza",
+    "descricao": "Serviços de limpeza residencial e comercial",
+    "icon": "broom"
+  },
+  {
+    "id": 2,
+    "nome": "Manutenção",
+    "descricao": "Manutenção predial e reparos diversos",
+    "icon": "tools"
+  },
+  {
+    "id": 3,
+    "nome": "Hidráulica",
+    "descricao": "Serviços de encanamento e hidráulica",
+    "icon": "water-pump"
+  },
+  {
+    "id": 4,
+    "nome": "Elétrica",
+    "descricao": "Instalações e reparos elétricos",
+    "icon": "flash"
+  },
+  {
+    "id": 5,
+    "nome": "Pintura",
+    "descricao": "Serviços de pintura residencial e comercial",
+    "icon": "palette"
+  },
+  {
+    "id": 6,
+    "nome": "Encanamento",
+    "descricao": "Reparos e instalação de encanamento",
+    "icon": "pipe-leak"
+  },
+  {
+    "id": 7,
+    "nome": "Reparo",
+    "descricao": "Reparos gerais em residências e comércios",
+    "icon": "hammer-wrench"
+  },
+  {
+    "id": 8,
+    "nome": "Organização",
+    "descricao": "Organização e limpeza profunda de ambientes",
+    "icon": "clipboard-list"
+  },
+  {
+    "id": 9,
+    "nome": "Reformas & reparos",
+    "descricao": "Serviços gerais de reformas e reparos",
+    "icon": "toolbox-outline"
+  },
+  {
+    "id": 10,
+    "nome": "Cuidados pessoais",
+    "descricao": "Serviços de beleza e cuidados pessoais",
+    "icon": "content-cut"
+  },
+  {
+    "id": 11,
+    "nome": "Serviços domésticos",
+    "descricao": "Serviços de auxílio domiciliar",
+    "icon": "vacuum-outline"
+  },
+  {
+    "id": 12,
+    "nome": "Tecnologia",
+    "descricao": "Suporte e serviços tecnológicos",
+    "icon": "laptop"
+  },
+  {
+    "id": 13,
+    "nome": "Educação",
+    "descricao": "Aulas particulares e reforço escolar",
+    "icon": "school-outline"
+  },
+  {
+    "id": 14,
+    "nome": "Automotivo",
+    "descricao": "Serviços de manutenção automotiva",
+    "icon": "car-outline"
+  },
+  {
+    "id": 15,
+    "nome": "Saúde e bem-estar",
+    "descricao": "Serviços de saúde e terapias",
+    "icon": "heart-pulse"
+  },
+  {
+    "id": 16,
+    "nome": "Pets & Animais",
+    "descricao": "Cuidados e serviços para animais de estimação",
+    "icon": "paw-outline"
+  },
+  {
+    "id": 17,
+    "nome": "Eventos & festas",
+    "descricao": "Organização de eventos e festas",
+    "icon": "party-popper"
+  },
+  {
+    "id": 18,
+    "nome": "Transporte e logística",
+    "descricao": "Serviços de transporte e logística",
+    "icon": "truck-delivery-outline"
+  },
+  {
+    "id": 19,
+    "nome": "Moda & vestuário",
+    "descricao": "Serviços de moda e vestuário",
+    "icon": "dresser-outline"
+  },
+  {
+    "id": 20,
+    "nome": "Jardinagem & paisagismo",
+    "descricao": "Cuidados com jardins e paisagismo",
+    "icon": "tree-outline"
+  }
+],
   "contratacao": [
     {
       "id": 100,
