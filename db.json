@@ -79,37 +79,37 @@
     }
   ],
   "professional": [
-    {
-      "id": 10,
-      "usuario_id": 10,
-      "biografia": "Diarista com 10 anos de experiência em limpeza e organização. Atendo apartamentos, casas e escritórios em Belo Horizonte e região.",
-      "categorias": "limpeza, organização",
-      "faixa_preco": 80.0,
-      "avaliacao_media": 4.8,
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 11,
-      "usuario_id": 11,
-      "biografia": "Especialista em manutenção predial com 15 anos de experiência. Equipe completa para qualquer tipo de reparo. Cobertura em toda a região metropolitana.",
-      "categorias": "manutenção, hidráulica, elétrica",
-      "faixa_preco": 120.0,
-      "avaliacao_media": 4.9,
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": 12,
-      "usuario_id": 12,
-      "biografia": "Encanador com 8 anos de experiência. Consertos rápidos, tubulações, aquecedores e projetos customizados.",
-      "categorias": "encanamento, hidráulica",
-      "faixa_preco": 100.0,
-      "avaliacao_media": 4.6,
-      "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
-    }
-  ],
+  {
+    "id": 10,
+    "usuario_id": 10,
+    "biografia": "Diarista com 10 anos de experiência em limpeza e organização. Atendo apartamentos, casas e escritórios em Belo Horizonte e região.",
+    "categoria_ids": [1, 8],
+    "faixa_preco": 80.0,
+    "avaliacao_media": 4.8,
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z"
+  },
+  {
+    "id": 11,
+    "usuario_id": 11,
+    "biografia": "Especialista em manutenção predial com 15 anos de experiência. Equipe completa para qualquer tipo de reparo. Cobertura em toda a região metropolitana.",
+    "categoria_ids": [2, 3, 4],
+    "faixa_preco": 120.0,
+    "avaliacao_media": 4.9,
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z"
+  },
+  {
+    "id": 12,
+    "usuario_id": 12,
+    "biografia": "Encanador com 8 anos de experiência. Consertos rápidos, tubulações, aquecedores e projetos customizados.",
+    "categoria_ids": [3, 6],
+    "faixa_preco": 100.0,
+    "avaliacao_media": 4.6,
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z"
+  }
+],
   "portfolio": [
     {
       "id": 1,
