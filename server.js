@@ -12,13 +12,13 @@
  *
  * Tabelas (db.json):
  *   1. users          - Autenticação + cadastro base
- *   2. cliente        - Dados específicos cliente
- *   3. professional   - Dados específicos profissional
- *   4. portfolio      - Fotos/trabalhos do profissional
- *   5. contratacao    - Pedidos/serviços
- *   6. servico        - Categorias de serviços
- *   7. notificacao    - Notificações locais
- *   8. favorito       - Profissionais favoritados
+ *   2. clients         - Dados específicos cliente
+ *   3. professionals   - Dados específicos profissional
+ *   4. portfolios      - Fotos/trabalhos do profissional
+ *   5. contracts       - Pedidos/serviços
+ *   6. services        - Categorias de serviços
+ *   7. notifications   - Notificações locais
+ *   8. favorites       - Profissionais favoritados
  *
  * Deploy: Local (node server.js) ou Vercel (via vercel.json)
  *
@@ -87,13 +87,13 @@ server.get('/health', (req, res) => {
     uptime: Math.floor(process.uptime()),
     tables: [
       'users',
-      'cliente',
-      'professional',
-      'portfolio',
-      'contratacao',
-      'servico',
-      'notificacao',
-      'favorito'
+      'clients',
+      'professionals',
+      'portfolios',
+      'contracts',
+      'services',
+      'notifications',
+      'favorites'
     ]
   });
 });
@@ -184,47 +184,47 @@ if (require.main === module) {
     console.log('   POST   /register               Cadastro (users)');
     console.log('   POST   /login                  Login (retorna JWT)');
 
-    console.log('\n👤 USUÁRIOS:');
-    console.log('   GET    /users                  Listar');
-    console.log('   GET    /users/:id              Detalhe');
-    console.log('   PUT    /users/:id              Editar');
+    console.log('\n👤 USERS:');
+    console.log('   GET    /users                  List');
+    console.log('   GET    /users/:id              Detail');
+    console.log('   PUT    /users/:id              Edit');
 
-    console.log('\n🛍️  CLIENTES:');
-    console.log('   GET    /cliente                Listar');
-    console.log('   GET    /cliente/:id            Detalhe');
-    console.log('   PUT    /cliente/:id            Editar');
+    console.log('\n🛍️  CLIENTS:');
+    console.log('   GET    /clients                List');
+    console.log('   GET    /clients/:id            Detail');
+    console.log('   PUT    /clients/:id            Edit');
 
-    console.log('\n👨‍💼 PROFISSIONAIS:');
-    console.log('   GET    /professional           Listar todos');
-    console.log('   GET    /professional/:id       Detalhe');
-    console.log('   PUT    /professional/:id       Editar');
+    console.log('\n👨‍💼 PROFESSIONALS:');
+    console.log('   GET    /professionals          List all');
+    console.log('   GET    /professionals/:id      Detail');
+    console.log('   PUT    /professionals/:id      Edit');
     console.log('   GET    /api/professionals/search?lat=X&lon=Y&radius=Z');
 
-    console.log('\n🖼️  PORTFÓLIO:');
-    console.log('   GET    /portfolio              Listar');
-    console.log('   GET    /portfolio?professional_id=X');
-    console.log('   POST   /portfolio              Criar');
+    console.log('\n🖼️  PORTFOLIOS:');
+    console.log('   GET    /portfolios             List');
+    console.log('   GET    /portfolios?professional_id=X');
+    console.log('   POST   /portfolios             Create');
 
-    console.log('\n📋 SERVIÇOS/CATEGORIAS:');
-    console.log('   GET    /servico                Listar');
+    console.log('\n📋 SERVICES/CATEGORIES:');
+    console.log('   GET    /services               List');
 
-    console.log('\n🤝 CONTRATAÇÕES (Pedidos):');
-    console.log('   POST   /contratacao            Criar pedido');
-    console.log('   GET    /contratacao            Listar');
-    console.log('   GET    /contratacao/:id        Detalhe');
-    console.log('   PUT    /contratacao/:id        Atualizar');
-    console.log('   PUT    /api/contratacao/:id/status      Mudar status');
-    console.log('   PUT    /api/contratacao/:id/avaliar     Avaliar');
-    console.log('   DELETE /contratacao/:id        Cancelar');
+    console.log('\n🤝 CONTRACTS (Orders):');
+    console.log('   POST   /contracts             Create order');
+    console.log('   GET    /contracts             List');
+    console.log('   GET    /contracts/:id         Detail');
+    console.log('   PUT    /contracts/:id         Update');
+    console.log('   PUT    /api/contracts/:id/status      Change status');
+    console.log('   PUT    /api/contracts/:id/avaliar     Rate');
+    console.log('   DELETE /contracts/:id         Cancel');
 
-    console.log('\n💬 NOTIFICAÇÕES:');
-    console.log('   GET    /notificacao            Listar');
-    console.log('   POST   /notificacao            Criar');
+    console.log('\n💬 NOTIFICATIONS:');
+    console.log('   GET    /notifications         List');
+    console.log('   POST   /notifications         Create');
 
-    console.log('\n⭐ FAVORITOS:');
-    console.log('   GET    /favorito               Listar');
-    console.log('   POST   /favorito               Adicionar');
-    console.log('   DELETE /favorito/:id           Remover');
+    console.log('\n⭐ FAVORITES:');
+    console.log('   GET    /favorites             List');
+    console.log('   POST   /favorites             Add');
+    console.log('   DELETE /favorites/:id         Remove');
 
     console.log('\n🏥 SAÚDE:');
     console.log('   GET    /health                 Health check');

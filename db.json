@@ -61,7 +61,7 @@
       "updatedAt": "2025-01-15T10:30:00Z"
     }
   ],
-  "cliente": [
+  "clients": [
     {
       "id": 1,
       "userId": 1,
@@ -78,7 +78,7 @@
       "mensagem": "Gestor de condomínios, preciso de profissionais confiáveis"
     }
   ],
-  "professional": [
+  "professionals": [
     {
       "id": 10,
       "userId": 10,
@@ -110,7 +110,7 @@
       "updatedAt": "2025-01-15T10:30:00Z"
     }
   ],
-  "portfolio": [
+  "portfolios": [
     {
       "id": 1,
       "professionalId": 10,
@@ -168,7 +168,7 @@
       "data_timestamp": "2024-12-01T10:00:00Z"
     }
   ],
-  "servico": [
+  "services": [
     {
       "id": 1,
       "nome": "Limpeza",
@@ -210,7 +210,7 @@
       "descricao": "Organização e limpeza profunda de ambientes"
     }
   ],
-  "contratacao": [
+  "contracts": [
     {
       "id": 100,
       "servicoId": 1,
@@ -292,7 +292,7 @@
       "data_atualizacao": "2025-01-17T10:00:00Z"
     }
   ],
-  "notificacao": [
+  "notifications": [
     {
       "id": 1,
       "clienteId": 1,
@@ -324,7 +324,7 @@
       "data_criacao": "2025-01-23T09:00:00Z"
     }
   ],
-  "favorito": [
+  "favorites": [
     {
       "id": 1,
       "clienteId": 1,
