@@ -113,56 +113,56 @@
   "portfolios": [
     {
       "id": 1,
-      "professionalId": 10,
+      "userId": 10,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+1",
       "descricao": "Limpeza profissional de apartamento 3 quartos",
       "data_timestamp": "2024-12-20T14:00:00Z"
     },
     {
       "id": 2,
-      "professionalId": 10,
+      "userId": 10,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+2",
       "descricao": "Organização de escritório comercial",
       "data_timestamp": "2024-12-15T10:00:00Z"
     },
     {
       "id": 3,
-      "professionalId": 10,
+      "userId": 10,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+3",
       "descricao": "Limpeza profunda com desinfecção",
       "data_timestamp": "2024-12-10T09:00:00Z"
     },
     {
       "id": 4,
-      "professionalId": 11,
+      "userId": 11,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+1",
       "descricao": "Reparo completo de encanamento residencial",
       "data_timestamp": "2024-12-10T09:00:00Z"
     },
     {
       "id": 5,
-      "professionalId": 11,
+      "userId": 11,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+2",
       "descricao": "Manutenção de sistema elétrico predial",
       "data_timestamp": "2024-12-05T16:00:00Z"
     },
     {
       "id": 6,
-      "professionalId": 11,
+      "userId": 11,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+3",
       "descricao": "Reforma de banheiro completa",
       "data_timestamp": "2024-11-30T11:00:00Z"
     },
     {
       "id": 7,
-      "professionalId": 12,
+      "userId": 12,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Pedro+1",
       "descricao": "Conserto de vazamento de torneira",
       "data_timestamp": "2024-12-12T13:00:00Z"
     },
     {
       "id": 8,
-      "professionalId": 12,
+      "userId": 12,
       "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Pedro+2",
       "descricao": "Instalação de aquecedor solar",
       "data_timestamp": "2024-12-01T10:00:00Z"
@@ -295,31 +295,31 @@
   "notifications": [
     {
       "id": 1,
-      "clienteId": 1,
+      "userId": 1,
       "mensagem": "Pedido concluído! Ana Paula completou seu pedido de limpeza.",
       "data_criacao": "2025-01-20T17:30:00Z"
     },
     {
       "id": 2,
-      "clienteId": 3,
+      "userId": 3,
       "mensagem": "Seu pedido foi aceito! Ana Paula começará o trabalho em breve.",
       "data_criacao": "2025-01-23T10:00:00Z"
     },
     {
       "id": 3,
-      "clienteId": 2,
+      "userId": 2,
       "mensagem": "Serviço em andamento! Carlos iniciou o trabalho de manutenção.",
       "data_criacao": "2025-01-22T13:00:00Z"
     },
     {
       "id": 4,
-      "clienteId": 1,
+      "userId": 1,
       "mensagem": "Nova proposta disponível! 2 profissionais responderam sua solicitação.",
       "data_criacao": "2025-01-24T16:00:00Z"
     },
     {
       "id": 5,
-      "clienteId": 10,
+      "userId": 10,
       "mensagem": "Novo pedido! Maria solicita limpeza de 3 quartos. Taxa: R$ 250.",
       "data_criacao": "2025-01-23T09:00:00Z"
     }
@@ -327,31 +327,31 @@
   "favorites": [
     {
       "id": 1,
-      "clientId": 1,
+      "userId": 1,
       "professionalId": 10,
       "data_criacao": "2025-01-20T18:00:00Z"
     },
     {
       "id": 2,
-      "clientId": 3,
+      "userId": 3,
       "professionalId": 10,
       "data_criacao": "2025-01-23T10:00:00Z"
     },
     {
       "id": 3,
-      "clientId": 2,
+      "userId": 2,
       "professionalId": 11,
       "data_criacao": "2025-01-22T09:00:00Z"
     },
     {
       "id": 4,
-      "clientId": 1,
+      "userId": 1,
       "professionalId": 12,
       "data_criacao": "2025-01-24T15:30:00Z"
     },
     {
       "id": 5,
-      "clientId": 2,
+      "userId": 2,
       "professionalId": 12,
       "data_criacao": "2025-01-21T11:00:00Z"
     }
