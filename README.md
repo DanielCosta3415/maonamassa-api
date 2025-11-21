@@ -534,8 +534,8 @@ Este projeto está licenciado sob a **MIT License** — veja o arquivo `LICENSE`
 
 **Projeto**: Mão na Massa  
 **Instituição**: [PUC Minas](https://www.pucminas.br/)  
-**Curso**: Engenharia de Software / Desenvolvimento Mobile  
-**Período**: 2025/1
+**Curso**: Tecnologia em Análise e Desenvolvimento de Sistemas
+**Período**: 2025/2
 
 ### Membros
 
@@ -545,21 +545,6 @@ Este projeto está licenciado sob a **MIT License** — veja o arquivo `LICENSE`
 | Daniel Lopes da Costa | Scrum Master |
 | Lorena Marta Martiniana de Paula | UX/UI Designer |
 | [Outros Membros] | Development Team |
-
----
-
-## 📧 Contato
-
-Para dúvidas ou sugestões sobre a API, abra uma **Issue** neste repositório ou entre em contato via [email do projeto].
-
----
-
-## 🎉 Agradecimentos
-
-- [JSON Server](https://github.com/typicode/json-server) — Pela excelente ferramenta
-- [Vercel](https://vercel.com/) — Pelo hosting e deploy contínuo
-- [Expo](https://expo.dev/) — Pelo framework React Native
-- [PUC Minas](https://www.pucminas.br/) — Pelo suporte acadêmico
 
 ---
 

@@ -6,9 +6,19 @@
       "email": "maria@example.com",
       "telefone": "31987654321",
       "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://via.placeholder.com/200?text=Maria",
+      "foto_blob": "https://randomuser.me/api/portraits/women/1.jpg",
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "endereco": [
+        {
+          "tipo": "principal",
+          "rua": "Rua das Flores",
+          "numero": "120",
+          "cidade": "Belo Horizonte",
+          "estado": "MG",
+          "cep": "30100-001"
+        }
+      ]
     },
     {
       "id": 2,
@@ -16,9 +26,19 @@
       "email": "joao@example.com",
       "telefone": "31988776655",
       "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://via.placeholder.com/200?text=Joao",
+      "foto_blob": "https://randomuser.me/api/portraits/men/2.jpg",
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "endereco": [
+        {
+          "tipo": "principal",
+          "rua": "Av. das Palmeiras",
+          "numero": "987",
+          "cidade": "São Paulo",
+          "estado": "SP",
+          "cep": "01210-200"
+        }
+      ]
     },
     {
       "id": 3,
@@ -26,9 +46,19 @@
       "email": "fernanda@example.com",
       "telefone": "31991234567",
       "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://via.placeholder.com/200?text=Fernanda",
+      "foto_blob": "https://randomuser.me/api/portraits/women/3.jpg",
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "endereco": [
+        {
+          "tipo": "principal",
+          "rua": "Rua do Cano",
+          "numero": "321",
+          "cidade": "Curitiba",
+          "estado": "PR",
+          "cep": "80000-000"
+        }
+      ]
     },
     {
       "id": 10,
@@ -36,9 +66,19 @@
       "email": "ana@example.com",
       "telefone": "31998765432",
       "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://via.placeholder.com/200?text=Ana",
+      "foto_blob": "https://randomuser.me/api/portraits/women/5.jpg",
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "endereco": [
+        {
+          "tipo": "principal",
+          "rua": "Praça dos Trabalhadores",
+          "numero": "100",
+          "cidade": "Uberlândia",
+          "estado": "MG",
+          "cep": "38400-000"
+        }
+      ]
     },
     {
       "id": 11,
@@ -46,9 +86,19 @@
       "email": "carlos@example.com",
       "telefone": "31997654321",
       "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://via.placeholder.com/200?text=Carlos",
+      "foto_blob": "https://randomuser.me/api/portraits/men/6.jpg",
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "endereco": [
+        {
+          "tipo": "principal",
+          "rua": "Rua do Mercado",
+          "numero": "230",
+          "cidade": "Porto Alegre",
+          "estado": "RS",
+          "cep": "90000-500"
+        }
+      ]
     },
     {
       "id": 12,
@@ -56,9 +106,19 @@
       "email": "pedro@example.com",
       "telefone": "31999999999",
       "password": "$2a$10$slODzn.eR6V8KJZzjd1u9u5F8WkXvZ1hDpLzZ6eoJ7Z8B2J8J8J8J",
-      "foto_blob": "https://via.placeholder.com/200?text=Pedro",
+      "foto_blob": "https://i.ibb.co/7JFyq069/avatar5.png",
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "endereco": [
+        {
+          "tipo": "principal",
+          "rua": "Av. do Contorno",
+          "numero": "10",
+          "cidade": "Recife",
+          "estado": "PE",
+          "cep": "50000-150"
+        }
+      ]
     }
   ],
   "clients": [
@@ -83,52 +143,79 @@
       "id": 10,
       "userId": 10,
       "biografia": "Diarista com 10 anos de experiência em limpeza e organização. Atendo apartamentos, casas e escritórios em Belo Horizonte e região.",
-      "categorias": "limpeza, organização",
-      "faixa_preco": 80,
+      "categoria_ids": [1, 8],
+      "faixa_preco": 80.0,
       "avaliacao_media": 4.8,
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "disponibilidade": [
+        { "dia": "Seg", "horarios": ["08:00", "09:00", "10:00", "11:00"] },
+        { "dia": "Ter", "horarios": ["08:00", "09:00", "10:00", "11:00"] },
+        { "dia": "Qua", "horarios": ["08:00", "09:00", "10:00", "11:00"] },
+        { "dia": "Qui", "horarios": ["08:00", "09:00", "10:00"] },
+        { "dia": "Sex", "horarios": ["09:00", "10:00", "11:00"] },
+        { "dia": "Sab", "horarios": ["09:00", "10:00", "11:00"] },
+        { "dia": "Dom", "horarios": [] }
+      ]
     },
     {
       "id": 11,
       "userId": 11,
       "biografia": "Especialista em manutenção predial com 15 anos de experiência. Equipe completa para qualquer tipo de reparo. Cobertura em toda a região metropolitana.",
-      "categorias": "manutenção, hidráulica, elétrica",
-      "faixa_preco": 120,
+      "categoria_ids": [2, 3, 4],
+      "faixa_preco": 120.0,
       "avaliacao_media": 4.9,
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "disponibilidade": [
+        { "dia": "Seg", "horarios": ["08:00", "09:00", "10:00"] },
+        { "dia": "Ter", "horarios": ["08:00", "09:00", "10:00"] },
+        { "dia": "Qua", "horarios": ["08:00", "09:00", "10:00"] },
+        { "dia": "Qui", "horarios": ["09:00", "10:00"] },
+        { "dia": "Sex", "horarios": ["10:00", "11:00"] },
+        { "dia": "Sab", "horarios": ["09:00", "11:00"] },
+        { "dia": "Dom", "horarios": [] }
+      ]
     },
     {
       "id": 12,
       "userId": 12,
       "biografia": "Encanador com 8 anos de experiência. Consertos rápidos, tubulações, aquecedores e projetos customizados.",
-      "categorias": "encanamento, hidráulica",
-      "faixa_preco": 100,
+      "categoria_ids": [3, 6],
+      "faixa_preco": 100.0,
       "avaliacao_media": 4.6,
       "createdAt": "2025-01-15T10:30:00Z",
-      "updatedAt": "2025-01-15T10:30:00Z"
+      "updatedAt": "2025-01-15T10:30:00Z",
+      "disponibilidade": [
+        { "dia": "Seg", "horarios": ["08:30", "09:30", "10:30"] },
+        { "dia": "Ter", "horarios": ["08:30", "09:30", "10:30"] },
+        { "dia": "Qua", "horarios": ["08:30", "10:30"] },
+        { "dia": "Qui", "horarios": [] },
+        { "dia": "Sex", "horarios": ["10:30", "11:30"] },
+        { "dia": "Sab", "horarios": ["09:00", "10:00"] },
+        { "dia": "Dom", "horarios": [] }
+      ]
     }
   ],
   "portfolios": [
     {
       "id": 1,
       "userId": 10,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+1",
+      "arquivo_blob": "https://i.ibb.co/BHpxRJDv/prof5-img1.png",
       "descricao": "Limpeza profissional de apartamento 3 quartos",
       "createdAt": "2024-12-20T14:00:00Z"
     },
     {
       "id": 2,
       "userId": 10,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+2",
+      "arquivo_blob": "https://i.ibb.co/cSzrD8PG/prof5-img2.png",
       "descricao": "Organização de escritório comercial",
       "createdAt": "2024-12-15T10:00:00Z"
     },
     {
       "id": 3,
       "userId": 10,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Ana+3",
+      "arquivo_blob": "https://i.ibb.co/HDBTjTby/prof5-img3.png",
       "descricao": "Limpeza profunda com desinfecção",
       "createdAt": "2024-12-10T09:00:00Z"
     },
@@ -172,55 +259,145 @@
     {
       "id": 1,
       "nome": "Limpeza",
-      "descricao": "Serviços de limpeza residencial e comercial"
+      "descricao": "Serviços de limpeza residencial e comercial",
+      "icon": "broom"
     },
     {
       "id": 2,
       "nome": "Manutenção",
-      "descricao": "Manutenção predial e reparos diversos"
+      "descricao": "Manutenção predial e reparos diversos",
+      "icon": "tools"
     },
     {
       "id": 3,
       "nome": "Hidráulica",
-      "descricao": "Serviços de encanamento e hidráulica"
+      "descricao": "Serviços de encanamento e hidráulica",
+      "icon": "water-pump"
     },
     {
       "id": 4,
       "nome": "Elétrica",
-      "descricao": "Instalações e reparos elétricos"
+      "descricao": "Instalações e reparos elétricos",
+      "icon": "flash"
     },
     {
       "id": 5,
       "nome": "Pintura",
-      "descricao": "Serviços de pintura residencial e comercial"
+      "descricao": "Serviços de pintura residencial e comercial",
+      "icon": "palette"
     },
     {
       "id": 6,
       "nome": "Encanamento",
-      "descricao": "Reparos e instalação de encanamento"
+      "descricao": "Reparos e instalação de encanamento",
+      "icon": "pipe-leak"
     },
     {
       "id": 7,
       "nome": "Reparo",
-      "descricao": "Reparos gerais em residências e comércios"
+      "descricao": "Reparos gerais em residências e comércios",
+      "icon": "hammer-wrench"
     },
     {
       "id": 8,
       "nome": "Organização",
-      "descricao": "Organização e limpeza profunda de ambientes"
+      "descricao": "Organização e limpeza profunda de ambientes",
+      "icon": "clipboard-list"
+    },
+    {
+      "id": 9,
+      "nome": "Reformas & reparos",
+      "descricao": "Serviços gerais de reformas e reparos",
+      "icon": "toolbox-outline"
+    },
+    {
+      "id": 10,
+      "nome": "Cuidados pessoais",
+      "descricao": "Serviços de beleza e cuidados pessoais",
+      "icon": "content-cut"
+    },
+    {
+      "id": 11,
+      "nome": "Serviços domésticos",
+      "descricao": "Serviços de auxílio domiciliar",
+      "icon": "vacuum-outline"
+    },
+    {
+      "id": 12,
+      "nome": "Tecnologia",
+      "descricao": "Suporte e serviços tecnológicos",
+      "icon": "laptop"
+    },
+    {
+      "id": 13,
+      "nome": "Educação",
+      "descricao": "Aulas particulares e reforço escolar",
+      "icon": "school-outline"
+    },
+    {
+      "id": 14,
+      "nome": "Automotivo",
+      "descricao": "Serviços de manutenção automotiva",
+      "icon": "car-outline"
+    },
+    {
+      "id": 15,
+      "nome": "Saúde e bem-estar",
+      "descricao": "Serviços de saúde e terapias",
+      "icon": "heart-pulse"
+    },
+    {
+      "id": 16,
+      "nome": "Pets & Animais",
+      "descricao": "Cuidados e serviços para animais de estimação",
+      "icon": "paw-outline"
+    },
+    {
+      "id": 17,
+      "nome": "Eventos & festas",
+      "descricao": "Organização de eventos e festas",
+      "icon": "party-popper"
+    },
+    {
+      "id": 18,
+      "nome": "Transporte e logística",
+      "descricao": "Serviços de transporte e logística",
+      "icon": "truck-delivery-outline"
+    },
+    {
+      "id": 19,
+      "nome": "Moda & vestuário",
+      "descricao": "Serviços de moda e vestuário",
+      "icon": "dresser-outline"
+    },
+    {
+      "id": 20,
+      "nome": "Jardinagem & paisagismo",
+      "descricao": "Cuidados com jardins e paisagismo",
+      "icon": "tree-outline"
     }
   ],
   "contracts": [
     {
       "id": 100,
-      "serviceId": 1,
+      "serviceId": [1],
       "clientId": 1,
       "professionalId": 10,
-      "preco": 250,
+      "preco": 250.0,
       "status": "concluido",
       "descricao": "Limpeza geral do apartamento (3 quartos, 2 banheiros, cozinha, sala)",
       "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+1",
-      "localizacao": "Rua A, 123 - Belo Horizonte, MG - 19.9167,-43.9345",
+      "localizacao": {
+        "cep": "30555210",
+        "rua": "Rua Salmínia",
+        "numero": "122",
+        "complemento": "Casa",
+        "bairro": "Havaí",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-01-20",
+      "hora": "10:00",
       "avaliadorId": 1,
       "nota": 5,
       "comentario": "Excelente trabalho! Apartamento ficou impecável. Ana Paula é muito atenciosa e profissional. Recomendo!",
@@ -229,15 +406,25 @@
     },
     {
       "id": 101,
-      "serviceId": 2,
+      "serviceId": [2],
       "clientId": 2,
       "professionalId": 11,
-      "preco": 500,
+      "preco": 500.0,
       "status": "em_andamento",
       "descricao": "Reparo no chuveiro e destravamento do encanamento",
       "arquivo_blob": null,
-      "localizacao": "Avenida B, 456 - Belo Horizonte, MG - 19.9200,-43.9300",
-      "avaliadorId": null,
+      "localizacao": {
+        "cep": "30555211",
+        "rua": "Avenida Brasil",
+        "numero": "456",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-01-22",
+      "hora": "08:00",
+      "avaliadorId": 2,
       "nota": null,
       "comentario": null,
       "createdAt": "2025-01-22T08:00:00Z",
@@ -245,15 +432,25 @@
     },
     {
       "id": 102,
-      "serviceId": 1,
+      "serviceId": [1],
       "clientId": 3,
       "professionalId": 10,
-      "preco": 400,
+      "preco": 400.0,
       "status": "aceito",
       "descricao": "Limpeza profunda de 2 salas comerciais",
       "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+3",
-      "localizacao": "Rua C, 789 - Belo Horizonte, MG - 19.9250,-43.9400",
-      "avaliadorId": null,
+      "localizacao": {
+        "cep": "30555212",
+        "rua": "Rua dos Andradas",
+        "numero": "789",
+        "complemento": "Sala 101",
+        "bairro": "Santa Efigênia",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-01-23",
+      "hora": "09:00",
+      "avaliadorId": 3,
       "nota": null,
       "comentario": null,
       "createdAt": "2025-01-23T09:00:00Z",
@@ -261,15 +458,25 @@
     },
     {
       "id": 103,
-      "serviceId": 3,
+      "serviceId": [3],
       "clientId": 1,
       "professionalId": 12,
-      "preco": 150,
+      "preco": 150.0,
       "status": "criado",
       "descricao": "Conserto de torneira que está vazando",
       "arquivo_blob": null,
-      "localizacao": "Rua A, 123 - Belo Horizonte, MG - 19.9167,-43.9345",
-      "avaliadorId": null,
+      "localizacao": {
+        "cep": "30555213",
+        "rua": "Rua da Paz",
+        "numero": "123",
+        "complemento": "",
+        "bairro": "São Pedro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-01-24",
+      "hora": "15:00",
+      "avaliadorId": 3,
       "nota": null,
       "comentario": null,
       "createdAt": "2025-01-24T15:00:00Z",
@@ -277,19 +484,211 @@
     },
     {
       "id": 104,
-      "serviceId": 1,
+      "serviceId": [1],
       "clientId": 2,
       "professionalId": 10,
       "preco": 300,
       "status": "concluido",
       "descricao": "Limpeza semanal recorrente",
       "arquivo_blob": null,
-      "localizacao": "Avenida B, 456 - Belo Horizonte, MG - 19.9200,-43.9300",
+      "localizacao": {
+        "cep": "30555214",
+        "rua": "Rua das Flores",
+        "numero": "456",
+        "complemento": "",
+        "bairro": "Funcionários",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-01-10",
+      "hora": "08:00",
       "avaliadorId": 2,
       "nota": 4,
       "comentario": "Bom atendimento. Preço poderia ser mais competitivo.",
       "createdAt": "2025-01-10T08:00:00Z",
       "updatedAt": "2025-01-17T10:00:00Z"
+    },
+    {
+      "id": 105,
+      "serviceId": [1],
+      "clientId": 4,
+      "professionalId": 10,
+      "preco": 300.0,
+      "status": "concluido",
+      "descricao": "Limpeza profunda com organização detalhada",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo1",
+      "localizacao": {
+        "cep": "30600000",
+        "rua": "Rua das Acácias",
+        "numero": "150",
+        "complemento": "Apartamento 23",
+        "bairro": "São Lucas",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-02-10",
+      "hora": "14:00",
+      "avaliadorId": 4,
+      "nota": 4,
+      "comentario": "Muito satisfeito com o serviço.",
+      "createdAt": "2025-02-10T14:00:00Z",
+      "updatedAt": "2025-02-10T15:00:00Z"
+    },
+    {
+      "id": 106,
+      "serviceId": [8],
+      "clientId": 5,
+      "professionalId": 10,
+      "preco": 220.0,
+      "status": "concluido",
+      "descricao": "Organização de escritório comercial",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo2",
+      "localizacao": {
+        "cep": "30560000",
+        "rua": "Av. das Américas",
+        "numero": "400",
+        "complemento": "",
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-02-15",
+      "hora": "09:00",
+      "avaliadorId": 5,
+      "nota": 5,
+      "comentario": "Profissional dedicado e eficiente.",
+      "createdAt": "2025-02-15T09:00:00Z",
+      "updatedAt": "2025-02-15T11:00:00Z"
+    },
+    {
+      "id": 107,
+      "serviceId": [2, 3, 4],
+      "clientId": 6,
+      "professionalId": 11,
+      "preco": 600.0,
+      "status": "concluido",
+      "descricao": "Manutenção elétrica completa",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo3",
+      "localizacao": {
+        "cep": "30570000",
+        "rua": "Rua das Flores",
+        "numero": "789",
+        "complemento": "Casa",
+        "bairro": "Santa Efigênia",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-03-05",
+      "hora": "13:00",
+      "avaliadorId": 6,
+      "nota": 5,
+      "comentario": "Serviço impecável e rápido.",
+      "createdAt": "2025-03-05T13:00:00Z",
+      "updatedAt": "2025-03-05T14:00:00Z"
+    },
+    {
+      "id": 108,
+      "serviceId": [3],
+      "clientId": 7,
+      "professionalId": 11,
+      "preco": 450.0,
+      "status": "concluido",
+      "descricao": "Reparo hidráulico especializado",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo4",
+      "localizacao": {
+        "cep": "30580000",
+        "rua": "Av. Pará",
+        "numero": "123",
+        "complemento": "Sala 01",
+        "bairro": "Funcionários",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-03-10",
+      "hora": "15:00",
+      "avaliadorId": 7,
+      "nota": 4,
+      "comentario": "Ótimo profissional, recomendo.",
+      "createdAt": "2025-03-10T15:00:00Z",
+      "updatedAt": "2025-03-10T16:00:00Z"
+    },
+    {
+      "id": 109,
+      "serviceId": [4],
+      "clientId": 8,
+      "professionalId": 11,
+      "preco": 520.0,
+      "status": "concluido",
+      "descricao": "Reparo elétrico rápido",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo5",
+      "localizacao": {
+        "cep": "30585000",
+        "rua": "Rua Primavera",
+        "numero": "456",
+        "complemento": "",
+        "bairro": "Centro Sul",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-03-15",
+      "hora": "10:30",
+      "avaliadorId": 8,
+      "nota": 5,
+      "comentario": "Serviço eficiente e profissional.",
+      "createdAt": "2025-03-15T10:30:00Z",
+      "updatedAt": "2025-03-15T11:30:00Z"
+    },
+    {
+      "id": 110,
+      "serviceId": [1],
+      "clientId": 9,
+      "professionalId": 12,
+      "preco": 350.0,
+      "status": "concluido",
+      "descricao": "Limpeza detalhada de banheiro",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo6",
+      "localizacao": {
+        "cep": "30590000",
+        "rua": "Rua das Orquídeas",
+        "numero": "221",
+        "complemento": "Apto 302",
+        "bairro": "Buritis",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-03-20",
+      "hora": "14:30",
+      "avaliadorId": 9,
+      "nota": 5,
+      "comentario": "Ótimo serviço, muito profissional e caprichoso.",
+      "createdAt": "2025-03-20T14:30:00Z",
+      "updatedAt": "2025-03-20T15:30:00Z"
+    },
+    {
+      "id": 111,
+      "serviceId": [3, 6],
+      "clientId": 10,
+      "professionalId": 12,
+      "preco": 400.0,
+      "status": "concluido",
+      "descricao": "Conserto de vazamento e instalação",
+      "arquivo_blob": "https://via.placeholder.com/400?text=Foto+Pedido+Novo7",
+      "localizacao": {
+        "cep": "30600000",
+        "rua": "Rua das Palmeiras",
+        "numero": "123",
+        "complemento": "",
+        "bairro": "Santa Tereza",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "data": "2025-03-22",
+      "hora": "09:00",
+      "avaliadorId": 10,
+      "nota": 5,
+      "comentario": "Excelente serviço, muito rápido e eficiente.",
+      "createdAt": "2025-03-22T09:00:00Z",
+      "updatedAt": "2025-03-22T10:00:00Z"
     }
   ],
   "notifications": [
