@@ -12,13 +12,13 @@
  *
  * Tabelas (db.json):
  *   1. users          - Autenticação + cadastro base
- *   2. cliente        - Dados específicos cliente
- *   3. professional   - Dados específicos profissional
- *   4. portfolio      - Fotos/trabalhos do profissional
- *   5. contratacao    - Pedidos/serviços
- *   6. servico        - Categorias de serviços
- *   7. notificacao    - Notificações locais
- *   8. favorito       - Profissionais favoritados
+ *   2. clients         - Dados específicos cliente
+ *   3. professionals   - Dados específicos profissional
+ *   4. portfolios      - Fotos/trabalhos do profissional
+ *   5. contracts       - Pedidos/serviços
+ *   6. services        - Categorias de serviços
+ *   7. notifications   - Notificações locais
+ *   8. favorites       - Profissionais favoritados
  *
  * Deploy: Local (node server.js) ou Vercel (via vercel.json)
  *
@@ -38,38 +38,38 @@ const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
 /** Regras de acesso para as rotas das "tabelas" do JSON Server.
  *
- *  Não há como proteger a rota `contratacao` através de regras de dono (`6**`)
+ *  Não há como proteger a rota `contracts` através de regras de dono (`6**`)
  *  pois não é possível determinar o dono do dado através do `userId`, visto
  *  que tanto clientes quanto profissionais precisam ter o acesso de leitura/escrita
  *  do contrato após criados.
  *
  *  Além disso, os profissionais podem criar um novo contrato após visualizarem
- *  e aceitarem os `servico`s pedidos pelos clientes.
+ *  e aceitarem os `services` pedidos pelos clientes.
  */
 const accessRules = auth.rewriter({
   // Só o dono dos dados pode modificá-los.
   "users": 600,
 
   // Só o dono dos dados pode modificá-los e os outros podem apenas visualizar.
-  "cliente": 644,
-  "professional": 644,
+  "clients": 644,
+  "professionals": 644,
 
   // Só o profissional pode modificar seus portifólios,
   // enquanto o cliente e público podem apenas visualizar.
-  "portfolio": 644,
+  "portfolios": 644,
 
   // Só o cliente pode modificar os serviços solicitados,
   // enquanto os profissionais podem apenas visualizar.
-  "servico": 640,
+  "services": 640,
 
   // Só o cliente e o profissional podem modificar as contratações.
-  "contratacao": 660,
+  "contracts": 660,
 
   // Só o dono das notificações pode modificá-las.
-  "notificacao": 600,
+  "notifications": 600,
 
   // Só o cliente pode modificar os profissionais favoritos.
-  "favorito": 600
+  "favorites": 600
 });
 
 /** O pacote `json-server-auth` exige que o banco de dados seja
@@ -124,13 +124,13 @@ server.get('/health', (req, res) => {
     uptime: Math.floor(process.uptime()),
     tables: [
       'users',
-      'cliente',
-      'professional',
-      'portfolio',
-      'contratacao',
-      'servico',
-      'notificacao',
-      'favorito'
+      'clients',
+      'professionals',
+      'portfolios',
+      'contracts',
+      'services',
+      'notifications',
+      'favorites'
     ]
   });
 });
@@ -157,8 +157,8 @@ server.get('/api/professionals/search', (req, res) => {
 });
 
 // Endpoint para atualizar status de contratacao
-// PUT /api/contratacao/:id/status
-server.put('/api/contratacao/:id/status', (req, res) => {
+// PUT /api/contracts/:id/status
+server.put('/api/contracts/:id/status', (req, res) => {
   const { status } = req.body;
   const validStatus = ['criado', 'aceito', 'em_andamento', 'concluido', 'cancelado'];
 
@@ -175,8 +175,8 @@ server.put('/api/contratacao/:id/status', (req, res) => {
 });
 
 // Endpoint para atualizar avaliação de contratacao
-// PUT /api/contratacao/:id/avaliar
-server.put('/api/contratacao/:id/avaliar', (req, res) => {
+// PUT /api/contracts/:id/avaliar
+server.put('/api/contracts/:id/avaliar', (req, res) => {
   const { nota, comentario } = req.body;
 
   if (nota < 1 || nota > 5) {
@@ -221,53 +221,53 @@ if (require.main === module) {
     console.log('   POST   /register               Cadastro (users)');
     console.log('   POST   /login                  Login (retorna JWT)');
 
-    console.log('\n👤 USUÁRIOS:');
+    console.log('\n👤 USERS:');
     console.log('   GET    /users                  Listar');
     console.log('   GET    /users/:id              Detalhe');
     console.log('   PUT    /users/:id              Editar');
 
-    console.log('\n🛍️  CLIENTES:');
-    console.log('   GET    /cliente                Listar');
-    console.log('   GET    /cliente/:id            Detalhe');
-    console.log('   PUT    /cliente/:id            Editar');
+    console.log('\n🛍️  CLIENTS:');
+    console.log('   GET    /clients                Listar');
+    console.log('   GET    /clients/:id            Detalhe');
+    console.log('   PUT    /clients/:id            Editar');
 
-    console.log('\n👨‍💼 PROFISSIONAIS:');
-    console.log('   GET    /professional           Listar todos');
-    console.log('   GET    /professional/:id       Detalhe');
-    console.log('   PUT    /professional/:id       Editar');
+    console.log('\n👨‍💼 PROFESSIONALS:');
+    console.log('   GET    /professionals          Listar todos');
+    console.log('   GET    /professionals/:id      Detalhe');
+    console.log('   PUT    /professionals/:id      Editar');
     console.log('   GET    /api/professionals/search?lat=X&lon=Y&radius=Z');
 
-    console.log('\n🖼️  PORTFÓLIO:');
-    console.log('   GET    /portfolio              Listar');
-    console.log('   GET    /portfolio?professional_id=X');
-    console.log('   POST   /portfolio              Criar');
+    console.log('\n🖼️  PORTFOLIOS:');
+    console.log('   GET    /portfolios             Listar');
+    console.log('   GET    /portfolios?professional_id=X');
+    console.log('   POST   /portfolios             Criar');
 
-    console.log('\n📋 SERVIÇOS/CATEGORIAS:');
-    console.log('   GET    /servico                Listar');
+    console.log('\n📋 SERVICES/CATEGORIES:');
+    console.log('   GET    /services               Listar');
 
-    console.log('\n🤝 CONTRATAÇÕES (Pedidos):');
-    console.log('   POST   /contratacao            Criar pedido');
-    console.log('   GET    /contratacao            Listar');
-    console.log('   GET    /contratacao/:id        Detalhe');
-    console.log('   PUT    /contratacao/:id        Atualizar');
-    console.log('   PUT    /api/contratacao/:id/status      Mudar status');
-    console.log('   PUT    /api/contratacao/:id/avaliar     Avaliar');
-    console.log('   DELETE /contratacao/:id        Cancelar');
+    console.log('\n🤝 CONTRACTS (Orders):');
+    console.log('   POST   /contracts             Criar pedido');
+    console.log('   GET    /contracts             Listar');
+    console.log('   GET    /contracts/:id         Detalhe');
+    console.log('   PUT    /contracts/:id         Atualizar');
+    console.log('   PUT    /api/contracts/:id/status      Mudar status');
+    console.log('   PUT    /api/contracts/:id/avaliar     Avaliar');
+    console.log('   DELETE /contracts/:id         Cancelar');
 
-    console.log('\n💬 NOTIFICAÇÕES:');
-    console.log('   GET    /notificacao            Listar');
-    console.log('   POST   /notificacao            Criar');
+    console.log('\n💬 NOTIFICATIONS:');
+    console.log('   GET    /notifications         Listar');
+    console.log('   POST   /notifications         Criar');
 
-    console.log('\n⭐ FAVORITOS:');
-    console.log('   GET    /favorito               Listar');
-    console.log('   POST   /favorito               Adicionar');
-    console.log('   DELETE /favorito/:id           Remover');
+    console.log('\n⭐ FAVORITES:');
+    console.log('   GET    /favorites             Listar');
+    console.log('   POST   /favorites             Adicionar');
+    console.log('   DELETE /favorites/:id         Remover');
 
     console.log('\n🏥 SAÚDE:');
     console.log('   GET    /health                 Health check');
 
     console.log('\n════════════════════════════════════════════════════════\n');
-    console.log('📖 Teste no navegador: http://localhost:3000/professional');
+    console.log('📖 Teste no navegador: http://localhost:3000/professionals');
     console.log('📚 Documentação: https://github.com/seu-usuario/maonamassa-api');
     console.log('\n');
   });
