@@ -136,9 +136,9 @@ server.get('/health', (req, res) => {
 });
 
 // Endpoint para buscar profissionais por proximidade
-// GET /api/professionals/search?lat=-19.9167&lon=-43.9345&radius=8&servico_id=1
+// GET /api/professionals/search?lat=-19.9167&lon=-43.9345&radius=8&serviceId=1
 server.get('/api/professionals/search', (req, res) => {
-  const { lat, lon, radius = 8, servico_id } = req.query;
+  const { lat, lon, radius = 8, serviceId } = req.query;
 
   if (!lat || !lon) {
     return res.status(400).json({
@@ -151,7 +151,7 @@ server.get('/api/professionals/search', (req, res) => {
   // Por enquanto, cliente faz cálculo (vs. lógica em backend)
   res.json({
     message: 'Busca por proximidade disponível',
-    params: { lat, lon, radius, servico_id },
+    params: { lat, lon, radius, serviceId },
     note: 'Cálculo de distância realizado no cliente (Haversine)'
   });
 });
@@ -239,7 +239,7 @@ if (require.main === module) {
 
     console.log('\n🖼️  PORTFOLIOS:');
     console.log('   GET    /portfolios             Listar');
-    console.log('   GET    /portfolios?professional_id=X');
+    console.log('   GET    /portfolios?professionalId=X');
     console.log('   POST   /portfolios             Criar');
 
     console.log('\n📋 SERVICES/CATEGORIES:');
