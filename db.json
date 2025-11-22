@@ -724,35 +724,56 @@
     }
   ],
   "favorito": [
-    {
-      "id": 1,
-      "cliente_id": 1,
-      "professional_favorito_id": 10,
-      "data_criacao": "2025-01-20T18:00:00Z"
-    },
-    {
-      "id": 2,
-      "cliente_id": 3,
-      "professional_favorito_id": 10,
-      "data_criacao": "2025-01-23T10:00:00Z"
-    },
-    {
-      "id": 3,
-      "cliente_id": 2,
-      "professional_favorito_id": 11,
-      "data_criacao": "2025-01-22T09:00:00Z"
-    },
-    {
-      "id": 4,
-      "cliente_id": 1,
-      "professional_favorito_id": 12,
-      "data_criacao": "2025-01-24T15:30:00Z"
-    },
-    {
-      "id": 5,
-      "cliente_id": 2,
-      "professional_favorito_id": 12,
-      "data_criacao": "2025-01-21T11:00:00Z"
-    }
-  ]
+  {
+    "id": 1,
+    "nome": "Ana Paula Silva",
+    "id_profissional": 10,
+    "id_cliente": 1,
+    "tags": ["Limpeza", "Organização"],
+    "avatar_url": "https://randomuser.me/api/portraits/women/5.jpg",
+    "createdAt": "2025-01-20T18:00:00Z",
+    "updatedAt": "2025-01-20T18:00:00Z"
+  },
+  {
+    "id": 2,
+    "nome": "Ana Paula Silva",
+    "id_profissional": 10,
+    "id_cliente": 3,
+    "tags": ["Limpeza", "Organização"],
+    "avatar_url": "https://randomuser.me/api/portraits/women/5.jpg",
+    "createdAt": "2025-01-23T10:00:00Z",
+    "updatedAt": "2025-01-23T10:00:00Z"
+  },
+  {
+    "id": 3,
+    "nome": "Carlos Henrique",
+    "id_profissional": 11,
+    "id_cliente": 2,
+    "tags": ["Manutenção", "Hidráulica"],
+    "avatar_url": "https://randomuser.me/api/portraits/men/6.jpg",
+    "createdAt": "2025-01-22T09:00:00Z",
+    "updatedAt": "2025-01-22T09:00:00Z"
+  },
+  {
+    "id": 4,
+    "nome": "Pedro Encanador",
+    "id_profissional": 12,
+    "id_cliente": 1,
+    "tags": ["Hidráulica", "Encanamento"],
+    "avatar_url": "https://i.ibb.co/7JFyq069/avatar5.png",
+    "createdAt": "2025-01-24T15:30:00Z",
+    "updatedAt": "2025-01-24T15:30:00Z"
+  },
+  {
+    "id": 5,
+    "nome": "Pedro Encanador",
+    "id_profissional": 12,
+    "id_cliente": 2,
+    "tags": ["Hidráulica", "Encanamento"],
+    "avatar_url": "https://i.ibb.co/7JFyq069/avatar5.png",
+    "createdAt": "2025-01-21T11:00:00Z",
+    "updatedAt": "2025-01-21T11:00:00Z"
+  }
+]
+
 }
