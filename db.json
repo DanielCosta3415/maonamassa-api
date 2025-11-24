@@ -180,8 +180,8 @@
   {
     "id": 12,
     "usuario_id": 12,
-    "biografia": "Encanador com 8 anos de experiência. Consertos rápidos, tubulações, aquecedores e projetos customizados.",
-    "categoria_ids": [3, 6],
+    "biografia": "Pedreiro e pintor com 8 anos de experiência. Consertos rápidos, pintura, construção civil e projetos customizados.",
+    "categoria_ids": [5, 9],
     "faixa_preco": 100.0,
     "avaliacao_media": 4.6,
     "createdAt": "2025-01-15T10:30:00Z",
@@ -201,57 +201,64 @@
     {
       "id": 1,
       "professional_id": 10,
-      "arquivo_blob": "https://i.ibb.co/BHpxRJDv/prof5-img1.png",
+      "arquivo_blob": "https://i.ibb.co/3yq9GJVY/generated-image.jpg",
       "descricao": "Limpeza profissional de apartamento 3 quartos",
       "data_timestamp": "2024-12-20T14:00:00Z"
     },
     {
       "id": 2,
       "professional_id": 10,
-      "arquivo_blob": "https://i.ibb.co/cSzrD8PG/prof5-img2.png",
+      "arquivo_blob": "https://i.ibb.co/bgf1pWzt/generated-image-1.jpg",
       "descricao": "Organização de escritório comercial",
       "data_timestamp": "2024-12-15T10:00:00Z"
     },
     {
       "id": 3,
       "professional_id": 10,
-      "arquivo_blob": "https://i.ibb.co/HDBTjTby/prof5-img3.png",
+      "arquivo_blob": "https://i.ibb.co/V00J5LxR/generated-image-2.jpg",
       "descricao": "Limpeza profunda com desinfecção",
       "data_timestamp": "2024-12-10T09:00:00Z"
     },
     {
       "id": 4,
       "professional_id": 11,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+1",
+      "arquivo_blob": "https://i.ibb.co/HDBTjTby/prof5-img3.png",
       "descricao": "Reparo completo de encanamento residencial",
       "data_timestamp": "2024-12-10T09:00:00Z"
     },
     {
       "id": 5,
       "professional_id": 11,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+2",
+      "arquivo_blob": "https://i.ibb.co/WWzRNDt6/prof3-img3.png",
       "descricao": "Manutenção de sistema elétrico predial",
       "data_timestamp": "2024-12-05T16:00:00Z"
     },
     {
       "id": 6,
       "professional_id": 11,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Carlos+3",
+      "arquivo_blob": "https://i.ibb.co/BHpxRJDv/prof5-img1.png",
       "descricao": "Reforma de banheiro completa",
       "data_timestamp": "2024-11-30T11:00:00Z"
     },
     {
       "id": 7,
       "professional_id": 12,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Pedro+1",
-      "descricao": "Conserto de vazamento de torneira",
+      "arquivo_blob": "https://i.ibb.co/4cvHRS7/prof1-img1.png",
+      "descricao": "Construção de residência",
       "data_timestamp": "2024-12-12T13:00:00Z"
     },
     {
       "id": 8,
       "professional_id": 12,
-      "arquivo_blob": "https://via.placeholder.com/400?text=Portfolio+Pedro+2",
-      "descricao": "Instalação de aquecedor solar",
+      "arquivo_blob": "https://i.ibb.co/WW2VQ8g4/prof1-img3.png",
+      "descricao": "Pintura residencial",
+      "data_timestamp": "2024-12-01T10:00:00Z"
+    },
+    {
+      "id": 9,
+      "professional_id": 12,
+      "arquivo_blob": "https://i.ibb.co/v4scWNdQ/prof1-img2.png",
+      "descricao": "Colocação de pisos e revestimentos",
       "data_timestamp": "2024-12-01T10:00:00Z"
     }
   ],
