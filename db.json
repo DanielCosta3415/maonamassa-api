@@ -692,37 +692,72 @@
   }
 ],
   "notificacao": [
-    {
-      "id": 1,
-      "cliente_id": 1,
-      "mensagem": "Pedido concluído! Ana Paula completou seu pedido de limpeza.",
-      "data_criacao": "2025-01-20T17:30:00Z"
-    },
-    {
-      "id": 2,
-      "cliente_id": 3,
-      "mensagem": "Seu pedido foi aceito! Ana Paula começará o trabalho em breve.",
-      "data_criacao": "2025-01-23T10:00:00Z"
-    },
-    {
-      "id": 3,
-      "cliente_id": 2,
-      "mensagem": "Serviço em andamento! Carlos iniciou o trabalho de manutenção.",
-      "data_criacao": "2025-01-22T13:00:00Z"
-    },
-    {
-      "id": 4,
-      "cliente_id": 1,
-      "mensagem": "Nova proposta disponível! 2 profissionais responderam sua solicitação.",
-      "data_criacao": "2025-01-24T16:00:00Z"
-    },
-    {
-      "id": 5,
-      "cliente_id": 10,
-      "mensagem": "Novo pedido! Maria solicita limpeza de 3 quartos. Taxa: R$ 250.",
-      "data_criacao": "2025-01-23T09:00:00Z"
-    }
-  ],
+  {
+    "id": 1,
+    "cliente_id": 1,
+    "profissional_id": 10,
+    "profissional_avatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "cliente_avatar": "https://randomuser.me/api/portraits/women/1.jpg",
+    "profissional_nome": "Ana Paula Silva",
+    "cliente_nome": "Maria de Lourdes",
+    "mensagem": "Pedido concluído! Ana Paula completou seu pedido de limpeza.",
+    "createdAt": "2025-01-20T17:30:00Z",
+    "updatedAt": "2025-01-20T17:30:00Z",
+    "read_status": false
+  },
+  {
+    "id": 2,
+    "cliente_id": 3,
+    "profissional_id": 10,
+    "profissional_avatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "cliente_avatar": "https://randomuser.me/api/portraits/women/3.jpg",
+    "profissional_nome": "Ana Paula Silva",
+    "cliente_nome": "Fernanda Alves",
+    "mensagem": "Seu pedido foi aceito! Ana Paula começará o trabalho em breve.",
+    "createdAt": "2025-01-23T10:00:00Z",
+    "updatedAt": "2025-01-23T10:00:00Z",
+    "read_status": false
+  },
+  {
+    "id": 3,
+    "cliente_id": 2,
+    "profissional_id": 11,
+    "profissional_avatar": "https://randomuser.me/api/portraits/men/6.jpg",
+    "cliente_avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+    "profissional_nome": "Carlos Henrique",
+    "cliente_nome": "João Pedro",
+    "mensagem": "Serviço em andamento! Carlos iniciou o trabalho de manutenção.",
+    "createdAt": "2025-01-22T13:00:00Z",
+    "updatedAt": "2025-01-22T13:00:00Z",
+    "read_status": false
+  },
+  {
+    "id": 4,
+    "cliente_id": 1,
+    "profissional_id": null,
+    "profissional_avatar": null,
+    "cliente_avatar": "https://randomuser.me/api/portraits/women/1.jpg",
+    "profissional_nome": null,
+    "cliente_nome": "Maria de Lourdes",
+    "mensagem": "Nova proposta disponível! 2 profissionais responderam sua solicitação.",
+    "createdAt": "2025-01-24T16:00:00Z",
+    "updatedAt": "2025-01-24T16:00:00Z",
+    "read_status": false
+  },
+  {
+    "id": 5,
+    "cliente_id": 10,
+    "profissional_id": 1,
+    "profissional_avatar": "https://randomuser.me/api/portraits/women/1.jpg",
+    "cliente_avatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "profissional_nome": "Maria de Lourdes",
+    "cliente_nome": "Ana Paula Silva",
+    "mensagem": "Novo pedido! Maria solicita limpeza de 3 quartos. Taxa: R$ 250.",
+    "createdAt": "2025-01-23T09:00:00Z",
+    "updatedAt": "2025-01-23T09:00:00Z",
+    "read_status": false
+  }
+],
   "favorito": [
   {
     "id": 1,
